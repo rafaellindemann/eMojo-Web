@@ -2,3 +2,21 @@
   display: flex;
   justify-content: center;
 }
+
+.container {
+  display: flex;
+  height: 100vh; /* Garante que o layout ocupe a altura total da viewport */
+}
+
+.sidebar {
+  width: 10%; /* Menu lateral ocupando 10% da largura */
+  background-color: #f4f4f4; /* Cor de fundo para diferenciar */
+  border-right: 1px solid #ddd; /* Borda para diferenciar do conteúdo */
+}
+
+.content {
+  width: 90%; /* Conteúdo ocupando 90% da largura */
+  /* padding: 20px;  */
+  overflow-y: auto; /* Adiciona rolagem se o conteúdo for maior que a altura da viewport */
+  height: 100vh;
+}
