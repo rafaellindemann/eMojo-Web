@@ -16,10 +16,7 @@ let post = {
     texto: '',
     data: DATE,
     reacts: [
-        {
-            emoji: '',
-            qtd: INT
-        },
+        react,
     ],
     comentarios:[
         comentario
@@ -33,5 +30,10 @@ let comentario = {
     postID: INT,
     autorID:INT,
     texto: '',
-    reacts: []
+    reacts: [react]
+}
+
+let react = {
+    emoji: '',
+    qtd: INT
 }
